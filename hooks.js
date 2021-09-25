@@ -180,7 +180,7 @@ export const useOnClickOutside = (ref, handler) => {
   }, [ref, handler]);
 };
 
-export const useClickInsided = (ref, handler) => {
+export const useClickInside = (ref, handler) => {
   useEffect(() => {
     const listener = (event) => {
       if (!ref.current || ref.current.contains(event.target)) handler();
